@@ -2,8 +2,9 @@ import styled from 'styled-components'
 import { colors } from '@/styles/variables'
 
 export const Component = styled.button`
-  &.action {
-    background-color: ${colors.secondary};
+  cursor: pointer;
+
+  &.filled {
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -13,7 +14,16 @@ export const Component = styled.button`
     text-transform: uppercase;
   }
 
-  &.addition {
+  &.blue {
+    background-color: ${colors.primary};
+    color: ${colors.white}
+  }
+
+  &.green {
+    background-color: ${colors.secondary};
+  }
+
+  &.underline {
     border: none;
     background-color: transparent;
     color: ${colors.primary};

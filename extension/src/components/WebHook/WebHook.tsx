@@ -1,4 +1,7 @@
+// external modules
 import { FC } from 'react';
+
+// internal modules
 import { Component, Actions } from "./WebHook.styles"
 import  Button from "@/components/Button/Button"
 
@@ -12,8 +15,8 @@ const Webhook: FC<WebhookProps> = ({ name }) => {
       <h2>{name}</h2>
 
       <Actions>
-        <Button text={`Edit`} style={`addition`} />
-        <Button text={`Start`} style={`action`} />
+        <Button text={`Edit`} style={`underline`} />
+        <Button text={`Start`} style={`filled green`} />
       </Actions>
     </Component>
   )

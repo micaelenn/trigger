@@ -1,21 +1,33 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { Component } from "./Popup.styles"
 
 // components
 import Heading from "@/components/Heading/Heading"
-import WebHook from "@/components/WebHook/WebHook"
+import WebHookList from '@/components/WebHookList/WebHookList';
 import Form from "@/components/Form/Form"
-import Button from "@/components/Button/Button"
+import Footer from "@/components/Footer/Footer"
 
 interface PopUpProps {}
 
-const PopUp: FC<PopUpProps> = () => {  
+const PopUp: FC<PopUpProps> = () => {
+  const [showIntro, setShowIntro] = useState(true)
+
+  const toggleWebhookForm = () => {
+    setShowIntro(!showIntro)
+  }
+
   return (
     <Component>
-      <Heading title={`Webhook Trigger`} />
-      <WebHook name={`Webhook Name`} />
-      <Form />
-      <Button text={`Add WebHook`} style={`addition`} />
+      {showIntro ?
+        <>
+          <Heading title={`Webhook Trigger`} />
+          <WebHookList />
+        </>
+      : 
+        <Form /> 
+      }
+
+      <Footer action={toggleWebhookForm} isIntro={showIntro}/>
     </Component>
   )
 }
