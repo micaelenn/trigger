@@ -1,6 +1,12 @@
+import { FC } from 'react';
 import { Component } from "./Input.styles"
 
-export function Input({ label, placeholder}) {
+interface InputProps {
+  label: string;
+  placeholder: string;
+}
+
+const Input: FC<InputProps> = ({ label, placeholder }) => {
   return(
     <Component>
       <label>{label}</label>
@@ -11,3 +17,5 @@ export function Input({ label, placeholder}) {
     </Component>
   )
 }
+
+export default Input

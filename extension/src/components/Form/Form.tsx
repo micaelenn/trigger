@@ -1,8 +1,11 @@
+import { FC } from 'react';
 import { Component } from "./Form.styles"
-import { Input } from "../Input/Input"
-import { Button } from "../Button/Button"
+import Input from '@/components/Input/Input';
+import Button from "@/components/Button/Button"
 
-export function Form() {
+interface FormProps {}
+
+const Form: FC<FormProps> = () => {
   return(
     <Component>
        <Input label={`Name`} placeholder={`Enter webhook name`}/>
@@ -11,3 +14,5 @@ export function Form() {
     </Component>
   )
 }
+
+export default Form

@@ -1,7 +1,12 @@
+import { FC } from 'react';
 import { Component, Actions } from "./WebHook.styles"
-import { Button } from "../Button/Button"
+import  Button from "@/components/Button/Button"
 
-export function WebHook({ name }) {
+interface WebhookProps {
+  name: string
+}
+
+const Webhook: FC<WebhookProps> = ({ name }) => {  
   return (
     <Component>
       <h2>{name}</h2>
@@ -13,3 +18,5 @@ export function WebHook({ name }) {
     </Component>
   )
 }
+
+export default Webhook
