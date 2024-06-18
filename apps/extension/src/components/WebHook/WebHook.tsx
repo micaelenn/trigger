@@ -15,7 +15,7 @@ const Webhook: FC<WebhookProps> = ({ name }) => {
       <h2>{name}</h2>
 
       <Actions>
-        <Button text={`Edit`} style={`underline`} />
+        <Button text={`🗑️`} style={`none`} />
         <Button text={`Start`} style={`filled green`} />
       </Actions>
     </Component>

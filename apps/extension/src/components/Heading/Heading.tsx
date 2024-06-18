@@ -8,7 +8,7 @@ interface HeadingProps {
 const Heading: FC<HeadingProps> = ({ title }) => {  
   return (
     <Component>
-      <h1>{title}</h1>
+      <h1>⚡{title}</h1>
     </Component>
   )
 }

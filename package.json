@@ -1,0 +1,23 @@
+{
+  "name": "webhooks",
+  "version": "1.0.0",
+  "description": "A local extension to save and trigger webhooks",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^2.0.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@9.8.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

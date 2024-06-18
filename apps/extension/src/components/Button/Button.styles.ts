@@ -4,6 +4,11 @@ import { colors } from '@/styles/variables'
 export const Component = styled.button`
   cursor: pointer;
 
+  &.none {
+    background-color: transparent;
+    border: none;
+  }
+
   &.filled {
     border: none;
     border-radius: 5px;

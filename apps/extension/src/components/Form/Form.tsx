@@ -8,7 +8,7 @@ interface FormProps {}
 const Form: FC<FormProps> = () => {
   return(
     <Component>
-      <h2>{`Add Webhook`}</h2>
+      <h2>{`🪝 Add Webhook`}</h2>
       
       <form>
         <Input label={`Name`} placeholder={``}/>
