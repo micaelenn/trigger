@@ -1,7 +1,5 @@
-class Application {
-  setEndpoint(endpoint: string) {
-    return `/api/v1/${endpoint}`
-  }
-}
+export class App {}
 
-export const app = new Application()
+export const setEndpoint = (endpoint: string) => {
+  return `/api/v1/${endpoint}`
+}

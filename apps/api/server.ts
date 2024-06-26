@@ -1,4 +1,10 @@
 import { app } from "./app/routes";
+import { sequelize } from './config/database'
+
+// init sequelize
+(async () => {
+  await sequelize.sync({ alter: true });
+})(); 
 
 const PORT = 3000
 
