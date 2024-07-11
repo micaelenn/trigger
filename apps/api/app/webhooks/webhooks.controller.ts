@@ -2,14 +2,21 @@
 import { Router } from "express";
 
 // internal modules
-import { app } from '../../config/application'
+import { setEndpoint } from '../../config/application'
 import { webhooksService } from './webhooks.service'
 
 export const webhooks: Router = Router();
 
-// GET
-webhooks.get(app.setEndpoint('webhooks'),
+// POST
+webhooks.post(setEndpoint('webhooks'), 
   async (req, res) => {
-    res.status(200).send('Hello World!')
+    res.status(200).send('Created')
+  }
+)
+
+// DELETE
+webhooks.delete(setEndpoint('webhooks/:id'),
+  async (req, res) => {
+    res.status(200).send('Deleted')
   }
 )
