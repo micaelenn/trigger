@@ -12,7 +12,6 @@ export const Component = styled.div`
   border-radius: 10px;
   height: 310px;
   padding: 20px 15px;
-  max-width: 370px;
   min-height: 310px;
-  width: 100%;
+  width: 370px;
 `

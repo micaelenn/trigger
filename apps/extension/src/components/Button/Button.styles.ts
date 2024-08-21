@@ -13,9 +13,10 @@ export const Component = styled.button`
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 12px;
     font-weight: 600;
     height: 30px;
-    padding: 0 25px;
+    padding: 0 20px;
     text-transform: uppercase;
   }
 

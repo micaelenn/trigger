@@ -3,7 +3,7 @@ import dotenv from "dotenv"
 import { Sequelize } from "sequelize-typescript"
 
 // models
-import { Webhook } from '../app/webhooks/webhooks.entity'
+import { Webhook } from '../app/webhooks/webhooks.model'
 
 dotenv.config({ path: ".env" });
 
