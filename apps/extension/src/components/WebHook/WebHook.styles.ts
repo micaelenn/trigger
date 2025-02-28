@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import { colors } from '@/styles/variables'
 
 export const Component = styled.div`
-  background-color: ${colors.grey};
+  background-color: transparent;
+  border: 1px solid #FFFFFF23;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -11,8 +12,9 @@ export const Component = styled.div`
   padding: 5px 10px;
 
   h2 {
-    font-size: 16px;
-    font-weight: 500;
+    color: ${colors.text};
+    font-size: 14px;
+    font-weight: 400;
   }
 `
 

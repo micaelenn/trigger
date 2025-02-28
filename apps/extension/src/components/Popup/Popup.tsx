@@ -18,14 +18,8 @@ const PopUp: FC<PopUpProps> = () => {
 
   return (
     <Component>
-      {showIntro ?
-        <>
-          <Heading title={`Webhook Trigger`} />
-          <WebHookList />
-        </>
-      : 
-        <Form /> 
-      }
+      <Heading title={`Webhook Trigger`} />
+      {showIntro ? <WebHookList action={toggleWebhookForm} /> : <Form />}
 
       <Footer action={toggleWebhookForm} isIntro={showIntro}/>
     </Component>

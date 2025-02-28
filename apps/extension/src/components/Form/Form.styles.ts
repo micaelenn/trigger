@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Component = styled.div`
   height: 100%;
+  margin-top: 30px;
   
   h2 {
     margin: 0;
@@ -13,9 +14,9 @@ export const Component = styled.div`
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin-top: 20px;
 
-    fieldset {
+    fieldset,
+    button {
       width: 100%;
     }
   }

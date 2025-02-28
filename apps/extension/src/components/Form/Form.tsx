@@ -20,26 +20,23 @@ const Form: FC<FormProps> = () => {
 
   return(
     <Component>
-      <h2>{`🪝 Add WebHook`}</h2>
-      
       <form>
         <Input 
           label={`Name`} 
-          placeholder={``}
+          placeholder={`Webook name`}
           value={name}
           onChange={(e) => {setName(e.target.value)}}
         />
         
         <Input 
-          label={`WebHook`} 
-          placeholder={``}
+          label={`URL`} 
+          placeholder={`URL to be triggered`}
           value={webhook}
           onChange={(e) => {setWebhook(e.target.value)}}
         />
         
         <Button 
-          text={`Add`} 
-          style={`filled blue`}
+          text={`Add Webhook`} 
           onClick={addWebhook}
         />
       </form>

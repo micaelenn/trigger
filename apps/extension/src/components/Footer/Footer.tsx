@@ -3,7 +3,7 @@ import { Component } from './Footer.styles';
 import Button from "@/components/Button/Button"
 
 interface FooterProps {
-  action: () => void;
+  action: VoidFunction;
   isIntro: boolean;
 }
 

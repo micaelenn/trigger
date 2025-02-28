@@ -1,17 +1,22 @@
 import styled from 'styled-components'
-import { colors } from '@/styles/variables'
+import { colors, fonts } from '@/styles/variables'
 
 export const Component = styled.div`
   * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: ${fonts.primary};
+  }
+
+  p {
+    color: ${colors.text};
+    line-height: 1.5;
   }
 
   display: flex;
   flex-direction: column;
-  background-color: ${colors.white};
+  background-color: ${colors.black};
   border-radius: 10px;
-  height: 310px;
-  padding: 20px 15px;
-  min-height: 310px;
-  width: 370px;
+  height: 360px;
+  padding: 30px 20px;
+  width: 340px;
 `

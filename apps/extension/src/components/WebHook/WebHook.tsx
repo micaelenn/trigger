@@ -25,16 +25,10 @@ const Webhook: FC<WebhookProps> = ({ name, url, id }) => {
     <Component>
       <h2>{name}</h2>
 
-      <Actions>
+      <Actions>        
         <Button 
-          text={`🗑️`} 
-          style={`none`} 
-          onClick={() => deleteWebhook(id)} 
-        />
-        
-        <Button 
-          text={`Start`} 
-          style={`filled green`} 
+          text={`Start`}
+          style={`secondary`}
           onClick={() => triggerWebhook(url)} 
         />
       </Actions>

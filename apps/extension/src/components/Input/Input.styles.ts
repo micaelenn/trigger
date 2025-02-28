@@ -7,13 +7,16 @@ export const Component = styled.fieldset`
   padding: 0;
 
   label {
+    color: ${colors.title};
     display: block;
     margin-bottom: 5px;
   }
 
   input {
-    border: 1px solid ${colors.black};
+    background-color: transparent;
+    border: 1px solid #FFFFFF23;
     border-radius: 5px;
+    color: ${colors.title};
     font-size: 14px;
     height: 40px;
     padding: 10px;

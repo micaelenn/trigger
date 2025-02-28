@@ -3,11 +3,11 @@ import { Component } from './Button.styles'
 
 interface ButtonProps {
   text: string;
-  style: string;
-  onClick?: () => void;
+  style?: string;
+  onClick?: VoidFunction;
 }
 
-const Button: FC<ButtonProps> = ({ text, style,  onClick }) => {
+const Button: FC<ButtonProps> = ({ text, style, onClick }) => {
   return(
     <Component onClick={onClick} type="button" className={style}>
       {text}
