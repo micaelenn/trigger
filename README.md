@@ -1,4 +1,4 @@
-# :zap: Trigger Extension
+# Trigger Extension
 
 A local extension to save and trigger webhooks
 
